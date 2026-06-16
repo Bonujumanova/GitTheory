@@ -327,10 +327,55 @@ git switch -c BRANCH_NAME
 
 
 
+***Слияние ветки с основной***
+```
+git checkout MAIN_BRANCH_NAME
+git merge MERGING_BRANCH_NAME
+```
+
+***Удаление ветки***
+```
+git branch -d BRANCH_NAME
+```
+
+***Управление ветками***
+***Показавть имеющиеся ветки***
+```
+git branch
+```
+
+***Посмотреть последний коммит на каждой из веток***
+```
+git branch -v
+```
+
+***Посмотреть ветки, которые были слиты/не слиты с текущей веткой***
+```
+git branch --merged
+```
+не слитые:
+```
+git branch --merged
+```
+
+
+***Переименование ветки**
+
+Локальное переименование ветки:
+```
+git branch --move CURRENT_BRANCH_NAME NEW_BRANCH_NAME
+```
+
+Изменение названия ветки на удаленном сервере:
+```
+git push --set-upstream origin NEW_BRANCH_NAME
+```
+
+
+
+
+
  
-
-
-
 
 
 
